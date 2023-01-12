@@ -9,8 +9,12 @@ h1{
     font-style: italic; 
     font-size: 110px
 }  
-
-
+.Annarfont{ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.liturannað{ 
+    color: white;
+}
 
 
 

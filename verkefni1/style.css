@@ -1,20 +1,13 @@
-body{
-    background-color:rgb(79, 143, 185); 
-    color: powderblue; 
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    color:powderblue
-    ; 
-    font-style: italic; 
-    font-size: 110px
-}  
-.Annarfont{ 
-    font-family: Arial, Helvetica, sans-serif;
-}
-.liturannað{ 
-    color: white;
-}
+ body{ 
+    color: steelblue;
+background-color: bisque
+;
+
+ }
+ img {
+    width: 400px;
+    height: 300px;
+  }
 
 
 

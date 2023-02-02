@@ -1,15 +1,22 @@
- body{ 
+html,body{ 
+  height: 100%;
+}
+
+body{ 
    max-width: 1280px;
    margin: 0 auto;
 
    border: 1px solid blue;
    padding:16px;
-   color: steelblue;
-   background-color: bisque; 
+   color: black;
+   
    font-size: xx-large;
    font-family: Arial, Helvetica, sans-serif; 
-   border-radius: 1000px blue;
-}
+   border-radius: 1000px blue;  
+   background: linear-gradient(to top left, lightblue, purple,yellow) 
+
+} 
+
 
 img {
     width: 400px;
@@ -27,16 +34,158 @@ img {
        border-right: 100cm solid red;
        border-right: 100px dotted blue;
        border-right: double;   
+       }
+        .Feitletur{ 
+    color: black;   
+  } 
 
-       
-  }  
-   
+ .box {
+   background-color: #444;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   font-size: 150%;
+
+ }
+
+ .a {
+   grid-column: 1 / 3;
+   grid-row: 1;
+ }
+ .b {
+   grid-column: 3/3 ;
+   grid-row: 2;
+ }
+ .c {
+   grid-column: 1 ;
+   grid-row: 2;
+ }
+ .d {
+   grid-column: 2;
+   grid-row: 2;
+ }
+
+ .myndir_dalkar{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+ 
+
+ @media screen and (min-width: 768px) {
   
-   .Feitletur{ 
-    color: black;  
+  .myndir_dalkar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+ } 
+ 
+ @media screen and (min-width: 768px) {
   
+  .TEXTI2{
+    display: grid;
+    grid-template-columns: 2fr; 
+  }
+ } 
+ @media screen and (min-width: 768px) {
+  
+  .TEXTI3{
+    display: grid;
+    grid-template-columns:  1fr;  
+  }
+ } 
+ 
 
+.wrapper{
+   
+  display: grid;
+  grid-gap: 5px; 
+  grid-template-columns:1fr 1fr;  
+  grid-template-areas: 
+  "a a"; 
+  "b b" 
+  "c d"; 
+}  
+} 
+@media screen and (  ain-width : 768 ) {
+  
+.wrapper{
+  display:grid; 
+  grid-gap: 10px; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  
+  grid-template-areas:  
+  "b a c d";
+}
+} 
+
+.a{ 
+  background: orange; 
+  grid-area: a;  
+  } 
+.b{ 
+  background: silver; 
+  grid-area:b; 
+
+}
+.c{ 
+  background: green; 
+  grid-area: b;
+} 
+.d{ 
+  background: navajowhite; 
+  grid-area: d;
+}
+
+.d{ 
+  background:blue; 
+  grid-area: b; 
+}
+
+
+.c{ 
+  background: green; 
+  grid-area: c; 
+
+} 
+
+.d{  
+background: red;
+
+} 
+.wrapper{ 
+  display:grid 
+  Grid-gap: 5px; 
+  Grid-template-columns:1fr; 
+grid-template-areas: 
+"c" 
+"a" 
+"b"
+"d"
+}  
+.topnav {
+  background: linear-gradient(to top left lightblue, purple, yellow );
+  overflow: hidden;
+}
+
+*/
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(255, 249, 249);
+}
+
+
+.topnav a.active {
+  color: white;
+} 
 
 
 
